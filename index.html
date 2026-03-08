@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senthil Enterprises | Hardware & Electricals - Kanyakumari</title>
+    <meta name="description" content="Senthil Enterprises - Your premium hardware and electrical shop in Chukkuparai, Therivilai. Quality plumbing, sanitary, and pumps since 2022. Serving Kanyakumari 629701.">
+    <meta name="keywords" content="Senthil Enterprises, Hardware Shop Therivilai, Electricals Chukkuparai, Kanyakumari Hardware, 629701, Plumbing Materials, Water Pumps, Sanitary Items">
+    
+    <meta property="og:title" content="Senthil Enterprises | Hardware & Electricals">
+    <meta property="og:description" content="One-stop shop for Electrical, Plumbing, and Sanitary needs in Kanyakumari District. Established 2022.">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#060f1e',
+                        gold: '#f5a623',
+                        brandBlue: '#1a56db',
+                    },
+                    fontFamily: {
+                        display: ['Barlow Condensed', 'sans-serif'],
+                        body: ['DM Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .ticker-container { overflow: hidden; white-space: nowrap; background: #1a56db; color: white; padding: 10px 0; }
+        .ticker-text { display: inline-block; animation: ticker 30s linear infinite; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
+        @keyframes ticker { 0% { transform: translateX(100%); } 100% { transform: translateX(-100%); } }
+        
+        .hero-overlay { background: linear-gradient(rgba(6, 15, 30, 0.85), rgba(6, 15, 30, 0.85)), url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80'); background-size: cover; background-position: center; }
+        
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+
+        .whatsapp-pulse { animation: pulse-green 2s infinite; }
+        @keyframes pulse-green { 0% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7); } 70% { box-shadow: 0 0 0 15px rgba(34, 197, 94, 0); } 100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); } }
+
+        .card-hover:hover { transform: translateY(-10px); transition: transform 0.3s ease; }
+        nav { height: 68px; }
+        section { scroll-margin-top: 68px; }
+    </style>
+</head>
+<body class="font-body bg-white text-gray-900 overflow-x-hidden">
+
+    <nav class="fixed top-0 w-full z-50 bg-navy text-white shadow-xl flex items-center">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="#" class="flex items-center gap-2">
+                <span class="bg-gold text-navy font-display text-2xl px-2 py-1 rounded font-bold">SE</span>
+                <span class="font-display text-xl tracking-wider uppercase hidden sm:block">Senthil Enterprises</span>
+            </a>
+            
+            <div class="hidden lg:flex items-center space-x-8 font-medium uppercase text-sm tracking-wide">
+                <a href="#about" class="hover:text-gold transition">About</a>
+                <a href="#products" class="hover:text-gold transition">Products</a>
+                <a href="#brands" class="hover:text-gold transition">Brands</a>
+                <a href="#services" class="hover:text-gold transition">Services</a>
+                <a href="#contact" class="hover:text-gold transition">Contact</a>
+            </div>
+
+            <div class="hidden md:flex items-center gap-4">
+                <a href="tel:+916382071697" class="text-sm font-bold flex items-center gap-2 border-r pr-4 border-gray-700">
+                    <span class="text-gold">📞</span> +91 63820 71697
+                </a>
+                <a href="https://wa.me/916382071697" class="bg-green-600 hover:bg-green-700 px-4 py-2 rounded text-sm font-bold flex items-center gap-2">
+                    WhatsApp
+                </a>
+            </div>
+
+            <button id="menuBtn" class="lg:hidden text-white text-3xl">☰</button>
+        </div>
+    </nav>
+
+    <div id="mobileMenu" class="fixed inset-0 bg-navy z-[60] flex flex-col items-center justify-center space-y-8 text-2xl font-display uppercase hidden">
+        <button id="closeBtn" class="absolute top-6 right-6 text-4xl">&times;</button>
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#products" class="mobile-link">Products</a>
+        <a href="#brands" class="mobile-link">Brands</a>
+        <a href="#services" class="mobile-link">Services</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+        <a href="tel:+916382071697" class="text-gold mt-4">+91 63820 71697</a>
+    </div>
+
+    <div class="mt-[68px] ticker-container font-display">
+        <div class="ticker-text">
+            Electricals • Plumbing • Sanitary • Water Pumps • Bulk Orders Welcome • Home Delivery in Kanyakumari District • Expert Guidance • Call us: +91 63820 71697 • Genuine Brands Only • 
+            Electricals • Plumbing • Sanitary • Water Pumps • Bulk Orders Welcome • Home Delivery in Kanyakumari District • Expert Guidance • Call us: +91 63820 71697 • Genuine Brands Only •
+        </div>
+    </div>
+
+    <section class="hero-overlay text-white py-24 lg:py-40 px-4">
+        <div class="container mx-auto text-center reveal">
+            <h1 class="font-display text-5xl md:text-8xl mb-6 leading-tight">SENTHIL ENTERPRISES</h1>
+            <p class="text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto mb-10">
+                Premium Hardware & Electrical solutions for contractors and homeowners in Kanyakumari. 
+                Quality materials, wholesale pricing.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4 mb-16">
+                <a href="#products" class="bg-gold text-navy font-bold px-8 py-4 rounded uppercase tracking-widest hover:bg-white transition">Browse Products</a>
+                <a href="https://wa.me/916382071697?text=Hello%20Senthil%20Enterprises!%20I%20need%20a%20price%20quote%20for%20hardware%20products." class="bg-transparent border-2 border-white px-8 py-4 rounded font-bold uppercase tracking-widest hover:bg-white hover:text-navy transition">Get WhatsApp Quote</a>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-8 max-w-4xl mx-auto pt-10 border-t border-gray-700">
+                <div>
+                    <h3 class="text-4xl font-display text-gold">500+</h3>
+                    <p class="text-sm uppercase tracking-widest text-gray-400">Products Available</p>
+                </div>
+                <div>
+                    <h3 class="text-4xl font-display text-gold">4</h3>
+                    <p class="text-sm uppercase tracking-widest text-gray-400">Main Categories</p>
+                </div>
+                <div class="col-span-2 md:col-span-1">
+                    <h3 class="text-4xl font-display text-gold">10+</h3>
+                    <p class="text-sm uppercase tracking-widest text-gray-400">Major Brands</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="bg-navy text-white py-20 px-4">
+        <div class="container mx-auto grid lg:grid-cols-2 gap-16 items-center">
+            <div class="reveal">
+                <h2 class="font-display text-4xl md:text-5xl mb-6 text-gold">TRUSTED SINCE 2022</h2>
+                <p class="text-gray-300 text-lg leading-relaxed mb-8">
+                    Senthil Enterprises has quickly established itself as a reliable partner for construction and renovation needs in Kanyakumari. Located at Chukkuparai, we specialize in providing high-durability hardware, electrical, and plumbing materials to individual builders and large-scale contractors.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="flex items-center gap-3">
+                        <span class="text-gold">✔</span> Authorized Dealer
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="text-gold">✔</span> Wholesale Pricing
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="text-gold">✔</span> Local Logistics Support
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="text-gold">✔</span> Genuine Spare Parts
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="text-gold">✔</span> Technical Consultation
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="text-gold">✔</span> Quick WhatsApp Billing
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-4 reveal">
+                <div class="bg-gray-800 p-8 rounded text-center">
+                    <div class="text-3xl font-display text-gold mb-2">2022</div>
+                    <div class="text-xs uppercase">Established</div>
+                </div>
+                <div class="bg-brandBlue p-8 rounded text-center">
+                    <div class="text-3xl font-display text-white mb-2">1-Stop</div>
+                    <div class="text-xs uppercase">Hardware Shop</div>
+                </div>
+                <div class="bg-gray-800 p-8 rounded text-center">
+                    <div class="text-3xl font-display text-gold mb-2">500+</div>
+                    <div class="text-xs uppercase">Products</div>
+                </div>
+                <div class="bg-gray-800 p-8 rounded text-center">
+                    <div class="text-3xl font-display text-gold mb-2">10+</div>
+                    <div class="text-xs uppercase">Global Brands</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="py-20 px-4 bg-gray-50">
+        <div class="container mx-auto">
+            <div class="text-center mb-16 reveal">
+                <h2 class="font-display text-5xl mb-4">OUR PRODUCT RANGE</h2>
+                <p class="text-gray-600 max-w-xl mx-auto">High-quality materials sourced directly from manufacturers to ensure performance and longevity.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover flex flex-col reveal">
+                    <div class="bg-blue-600 p-6 text-white font-display text-2xl flex justify-between items-center">
+                        Electricals 💡
+                        <span class="bg-white/20 text-xs px-2 py-1 rounded">250+ Items</span>
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <ul class="space-y-3 text-gray-700 mb-8">
+                            <li>• Switches & Sockets</li>
+                            <li>• Wires & Cables</li>
+                            <li>• LED Bulbs & Tubes</li>
+                            <li>• Ceiling & Table Fans</li>
+                            <li>• MCBs & DB Boards</li>
+                        </ul>
+                        <a href="https://wa.me/916382071697?text=Hello!%20I%20need%20electrical%20products." class="block text-center border-2 border-blue-600 text-blue-600 font-bold py-2 rounded hover:bg-blue-600 hover:text-white transition">WhatsApp Inquiry</a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover flex flex-col reveal">
+                    <div class="bg-green-600 p-6 text-white font-display text-2xl flex justify-between items-center">
+                        Plumbing 💧
+                        <span class="bg-white/20 text-xs px-2 py-1 rounded">120+ Items</span>
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <ul class="space-y-3 text-gray-700 mb-8">
+                            <li>• PVC & CPVC Pipes</li>
+                            <li>• Fittings & Couplings</li>
+                            <li>• Taps & Faucets</li>
+                            <li>• Ball & Gate Valves</li>
+                            <li>• Water Storage Tanks</li>
+                        </ul>
+                        <a href="https://wa.me/916382071697?text=Hello!%20I%20need%20plumbing%20materials." class="block text-center border-2 border-green-600 text-green-600 font-bold py-2 rounded hover:bg-green-600 hover:text-white transition">WhatsApp Inquiry</a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover flex flex-col reveal">
+                    <div class="bg-purple-600 p-6 text-white font-display text-2xl flex justify-between items-center">
+                        Sanitary 🚽
+                        <span class="bg-white/20 text-xs px-2 py-1 rounded">80+ Items</span>
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <ul class="space-y-3 text-gray-700 mb-8">
+                            <li>• Wash Basins</li>
+                            <li>• Western & Indian WCs</li>
+                            <li>• Showers & Mixers</li>
+                            <li>• Bathroom Accessories</li>
+                            <li>• Mirror Cabinets</li>
+                        </ul>
+                        <a href="https://wa.me/916382071697?text=Hello!%20I%20need%20sanitary%20items." class="block text-center border-2 border-purple-600 text-purple-600 font-bold py-2 rounded hover:bg-purple-600 hover:text-white transition">WhatsApp Inquiry</a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover flex flex-col reveal">
+                    <div class="bg-amber-600 p-6 text-white font-display text-2xl flex justify-between items-center">
+                        Pumps ⚙️
+                        <span class="bg-white/20 text-xs px-2 py-1 rounded">50+ Items</span>
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <ul class="space-y-3 text-gray-700 mb-8">
+                            <li>• Submersible Pumps</li>
+                            <li>• Monoblock Motors</li>
+                            <li>• Jet Pumps</li>
+                            <li>• Drainage Pumps</li>
+                            <li>• Booster Systems</li>
+                        </ul>
+                        <a href="https://wa.me/916382071697?text=Hello!%20I%20need%20water%20pumps%20or%20motors." class="block text-center border-2 border-amber-600 text-amber-600 font-bold py-2 rounded hover:bg-amber-600 hover:text-white transition">WhatsApp Inquiry</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="brands" class="py-20 px-4 bg-white">
+        <div class="container mx-auto">
+            <h2 class="font-display text-4xl text-center mb-12 reveal">AUTHORIZED BRANDS</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 reveal">
+                <div class="p-6 border border-gray-100 rounded-lg text-center hover:border-brandBlue transition font-bold text-gray-700">⚡ Havells</div>
+                <div class="p-6 border border-gray-100 rounded-lg text-center hover:border-brandBlue transition font-bold text-gray-700">🔌 Finolex</div>
+                <div class="p-6 border border-gray-100 rounded-lg text-center hover:border-brandBlue transition font-bold text-gray-700">🌀 Crompton</div>
+                <div class="p-6 border border-gray-100 rounded-lg text-center hover:border-brandBlue transition font-bold text-gray-700">🎨 Asian Paints</div>
+                <div class="p-6 border border-gray-100 rounded-lg text-center hover:border-brandBlue transition font-bold text-gray-700">💧 True Flow</div>
+                <div class="p-6 border border-gray-100 rounded-lg text-center hover:border-brandBlue transition font-bold text-gray-700">🏷️ HiFi</div>
+                <div class="p-6 border border-gray-100 rounded-lg text-center hover:border-brandBlue transition font-bold text-gray-700">🏢 Rolta</div>
+                <div class="p-6 border border-gray-100 rounded-lg text-center hover:border-brandBlue transition font-bold text-gray-700">📦 Syntex</div>
+                <div class="p-6 border border-gray-100 rounded-lg text-center hover:border-brandBlue transition font-bold text-gray-700">🚿 Aquva Tech</div>
+                <div class="p-6 border border-gray-100 rounded-lg text-center hover:border-brandBlue transition font-bold text-gray-700">🚽 Togani</div>
+                <div class="p-6 border border-gray-100 rounded-lg text-center hover:border-brandBlue transition font-bold text-gray-700">🛠️ Local Brands</div>
+                <div class="p-6 border border-gray-100 rounded-lg text-center hover:border-brandBlue transition font-bold text-gray-700">✨ And More...</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-20 px-4 bg-gray-100">
+        <div class="container mx-auto">
+            <h2 class="font-display text-5xl text-center mb-16 reveal">SERVICES & SUPPORT</h2>
+            <div class="grid md:grid-cols-3 gap-8 reveal">
+                <div class="bg-white border-t-4 border-gold p-8 shadow-md">
+                    <h3 class="text-xl font-bold mb-4">Contractor Supply</h3>
+                    <p class="text-gray-600">Special priority pricing and fulfillment for civil and electrical contractors in Kanyakumari.</p>
+                </div>
+                <div class="bg-white border-t-4 border-brandBlue p-8 shadow-md">
+                    <h3 class="text-xl font-bold mb-4">Bulk Orders</h3>
+                    <p class="text-gray-600">Competitive wholesale rates for large construction projects and residential complexes.</p>
+                </div>
+                <div class="bg-white border-t-4 border-green-500 p-8 shadow-md">
+                    <h3 class="text-xl font-bold mb-4">Home Delivery</h3>
+                    <p class="text-gray-600">Quick delivery services across Kanyakumari district for all heavy items and pipes.</p>
+                </div>
+                <div class="bg-white border-t-4 border-purple-500 p-8 shadow-md">
+                    <h3 class="text-xl font-bold mb-4">WhatsApp Ordering</h3>
+                    <p class="text-gray-600">Just send your requirement list over WhatsApp and get an instant digital estimate.</p>
+                </div>
+                <div class="bg-white border-t-4 border-red-500 p-8 shadow-md">
+                    <h3 class="text-xl font-bold mb-4">Material Support</h3>
+                    <p class="text-gray-600">Comprehensive building material support from foundation plumbing to finishing electricals.</p>
+                </div>
+                <div class="bg-white border-t-4 border-amber-500 p-8 shadow-md">
+                    <h3 class="text-xl font-bold mb-4">Expert Guidance</h3>
+                    <p class="text-gray-600">Not sure what to buy? Our experts help you select the right grade of materials for your needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-gradient-to-r from-navy to-brandBlue text-white text-center px-4 reveal">
+        <h2 class="font-display text-4xl mb-8">READY TO START YOUR PROJECT?</h2>
+        <div class="flex flex-col sm:flex-row justify-center gap-6">
+            <a href="https://wa.me/916382071697?text=Hello%20Senthil%20Enterprises!%20I%20need%20a%20price%20quote%20for%20hardware%20products." class="bg-green-600 hover:bg-green-700 text-white font-bold px-10 py-4 rounded-full flex items-center justify-center gap-3 transition shadow-xl">
+                <span>💬</span> Get Free Quote on WhatsApp
+            </a>
+            <a href="tel:+916382071697" class="bg-white text-navy font-bold px-10 py-4 rounded-full hover:bg-gold transition shadow-xl">
+                Call: 63820 71697
+            </a>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 px-4 bg-white">
+        <div class="container mx-auto">
+            <div class="grid lg:grid-cols-3 gap-8 mb-16">
+                <div class="bg-gray-50 p-8 rounded-xl border-l-4 border-gold reveal">
+                    <h4 class="font-display text-2xl mb-4">VISIT OUR STORE</h4>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Chukkuparai, Therivilai<br>
+                        சுக்குப்பாறை, தேரிவிளை<br>
+                        Kanyakumari District<br>
+                        Tamil Nadu – 629 701
+                    </p>
+                    <a href="https://maps.app.goo.gl/UFsSmedpR5GJxqaS9" class="text-brandBlue font-bold hover:underline">Open in Google Maps →</a>
+                </div>
+
+                <div class="bg-gray-50 p-8 rounded-xl border-l-4 border-brandBlue reveal">
+                    <h4 class="font-display text-2xl mb-4">CONTACT INFO</h4>
+                    <p class="text-gray-700 mb-2"><strong>Phone:</strong> +91 63820 71697</p>
+                    <p class="text-gray-700 mb-6"><strong>WhatsApp:</strong> +91 63820 71697</p>
+                    <a href="https://wa.me/916382071697" class="bg-brandBlue text-white px-6 py-2 rounded text-sm font-bold inline-block">Message Now</a>
+                </div>
+
+                <div class="bg-gray-50 p-8 rounded-xl border-l-4 border-green-500 reveal">
+                    <h4 class="font-display text-2xl mb-4">BUSINESS HOURS</h4>
+                    <p class="text-gray-700"><strong>Mon – Sat:</strong> 8:00 AM – 8:00 PM</p>
+                    <p class="text-gray-700"><strong>Sunday:</strong> 9:00 AM – 2:00 PM</p>
+                    <p class="mt-4 text-sm text-green-600 font-bold">● Currently Open</p>
+                </div>
+            </div>
+
+            <div class="w-full h-[450px] rounded-2xl overflow-hidden shadow-2xl border reveal">
+                <iframe
+src="https://www.google.com/maps?q=Therivilai%2C%20Kanyakumari%2C%20Tamil%20Nadu&output=embed"
+width="100%"
+height="400"
+style="border:0;"
+allowfullscreen=""
+loading="lazy"
+referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-navy text-white pt-16 pb-8 px-4">
+        <div class="container mx-auto grid md:grid-cols-3 gap-12 border-b border-gray-800 pb-12">
+            <div>
+                <a href="#" class="flex items-center gap-2 mb-6">
+                    <span class="bg-gold text-navy font-display text-2xl px-2 py-1 rounded font-bold">SE</span>
+                    <span class="font-display text-xl tracking-wider uppercase">Senthil Enterprises</span>
+                </a>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                    Premium hardware and electrical suppliers serving the heart of Kanyakumari. Trusted by contractors, preferred by homeowners.
+                </p>
+                <div class="flex gap-4 mt-6">
+                    <a href="tel:+916382071697" class="w-10 h-10 bg-gray-800 flex items-center justify-center rounded-full hover:bg-gold transition">📞</a>
+                    <a href="https://wa.me/916382071697" class="w-10 h-10 bg-gray-800 flex items-center justify-center rounded-full hover:bg-green-600 transition">💬</a>
+                </div>
+            </div>
+            
+            <div>
+                <h4 class="font-display text-xl mb-6 text-gold uppercase">Quick Links</h4>
+                <ul class="space-y-3 text-gray-400 text-sm">
+                    <li><a href="#about" class="hover:text-white">About Us</a></li>
+                    <li><a href="#products" class="hover:text-white">Our Products</a></li>
+                    <li><a href="#brands" class="hover:text-white">Stocked Brands</a></li>
+                    <li><a href="#services" class="hover:text-white">Services Offered</a></li>
+                    <li><a href="#contact" class="hover:text-white">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-display text-xl mb-6 text-gold uppercase">Product Categories</h4>
+                <ul class="space-y-3 text-gray-400 text-sm">
+                    <li>Electrical & Lighting</li>
+                    <li>Plumbing & Pipes</li>
+                    <li>Sanitary & Bathroom</li>
+                    <li>Pumps & Motors</li>
+                    <li>Building Hardware</li>
+                </ul>
+            </div>
+        </div>
+        <p class="text-center text-gray-500 text-xs mt-8">
+            &copy; 2026 Senthil Enterprises. All Rights Reserved. Designed for Excellence in Kanyakumari.
+        </p>
+    </footer>
+
+    <a href="https://wa.me/916382071697?text=Hello%20Senthil%20Enterprises!%20I%20need%20help%20with%20hardware%20products." 
+       class="fixed bottom-6 right-6 bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl z-50 whatsapp-pulse group"
+       title="Chat with us">
+        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-2.203 0-4.007 1.797-4.007 3.991 0 .586.156 1.141.422 1.633l-.445 1.641 1.68-.438c.469.258 1.008.398 1.57.398 2.203 0 4.008-1.797 4.008-3.991 0-2.194-1.805-3.991-4.008-3.991zm2.367 5.672c-.125.187-.438.312-.898.312-.227 0-.523-.047-.852-.211-.336-.164-.789-.438-1.234-.883-.445-.445-.719-.898-.883-1.234-.164-.328-.211-.625-.211-.852 0-.461.125-.773.312-.898.117-.078.234-.117.312-.117.078 0 .156.039.195.117l.469 1.133c.039.078.039.156 0 .234-.039.078-.117.156-.195.234l-.195.195c-.078.078-.117.156-.039.273.156.273.391.547.664.82.273.273.547.508.82.664.117.078.195.039.273-.039l.195-.195c.078-.078.156-.156.234-.195.078-.039.156-.039.234 0l1.133.469c.078.039.117.117.117.195 0 .078-.039.195-.117.312zM12 2C6.484 2 2 6.484 2 12c0 2.109.656 4.078 1.773 5.711L2 22l4.414-1.156c1.625.961 3.516 1.484 5.586 1.484 5.516 0 10-4.484 10-10S17.516 2 12 2z"/></svg>
+        <span class="absolute right-20 bg-white text-navy px-4 py-2 rounded shadow-lg text-sm font-bold opacity-0 group-hover:opacity-100 transition whitespace-nowrap pointer-events-none">
+            WhatsApp Us Now
+        </span>
+    </a>
+
+    <script>
+        // Mobile Menu Logic
+        const menuBtn = document.getElementById('menuBtn');
+        const closeBtn = document.getElementById('closeBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        function toggleMenu() {
+            mobileMenu.classList.toggle('hidden');
+            document.body.classList.toggle('overflow-hidden');
+        }
+
+        menuBtn.addEventListener('click', toggleMenu);
+        closeBtn.addEventListener('click', toggleMenu);
+        mobileLinks.forEach(link => link.addEventListener('click', toggleMenu));
+
+        // Scroll Reveal Animation
+        const observerOptions = { threshold: 0.1 };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // Active State for Nav
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('py-2', 'bg-opacity-95');
+                nav.classList.remove('py-4');
+            } else {
+                nav.classList.add('py-4');
+                nav.classList.remove('py-2', 'bg-opacity-95');
+            }
+        });
+    </script>
+</body>
+</html>
